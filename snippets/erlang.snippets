@@ -347,7 +347,7 @@ snippet otp gen_nb_server
 	%% @end
 	%% ----------------------------------------------------------------------------
 	start_link() ->
-		gen_server:start_link({local, ?SERVER}, ?MODULE, []).
+		gen_nb_server:start_link(?MODULE, []).
 
 
 	%% ============================================================================
